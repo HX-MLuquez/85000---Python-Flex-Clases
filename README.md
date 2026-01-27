@@ -5,8 +5,9 @@
 - Días y Horarios: Martes de 19:00 a 21:00 hrs.
 - Finalización: 31 de marzo 2026
 
-## Links 
-- Repo del curso:
+## Links Útiles
+
+- Repo del curso: https://github.com/HX-MLuquez/85000---Python-Flex-Clases
 - Google Collab: https://drive.google.com/drive/folders/1vyNIxm7k3sMS1U_7dztge38kxd6nS66P?usp=sharing
 
 ## Proyecto Final - Web Playground
