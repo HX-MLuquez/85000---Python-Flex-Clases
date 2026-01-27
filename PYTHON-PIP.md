@@ -28,6 +28,14 @@ Y en windows:
 python -m pip --version
 ```
 
+* Solución del PATH en caso de que no funcione python:
+- Ir a "Panel de Control" -> "Sistema y Seguridad" -> "Sistema" -> "Configuración avanzada del sistema" -> "Variables de entorno".
+- En "Variables del sistema", selecciona la variable "Path" y haz clic en "Editar".
+- Añade la ruta donde se instaló Python (por ejemplo, `C:\Python39\` y `C:\Python39\Scripts\`) y guarda los cambios.
+
+
+
+
 y para Instalar pip:
 
 ```
