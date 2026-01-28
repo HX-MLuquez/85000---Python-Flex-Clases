@@ -17,7 +17,25 @@ En un Playground no se abordan las cuestiones relativas a la Interfaz Gráfica (
 
 ## 📄 Entregas
 
-- Primera Entrega - Arma tu login (se habilita en la Clase 6)
+- Primera Entrega - Arma tu login (se habilita en la Clase 6) - nombre y password
+* Funciones
+- Registro de usuarios
+- Validación de usuarios
+- Guardado de usuarios en archivo txt
+- Login de usuarios
+* Manejo de excepciones
+
+def registrar_usuario(nombre, password):
+    # Código para registrar usuario
+    # agregar_usuario_a_archivo
+
+def agregar_usuario_a_archivo(nombre, password):
+    # Código para guardar usuario en archivo txt
+    whith open('usuarios.txt', 'a') as file:
+        file.write(f'{nombre},{password}\n')
+    
+
+
 - Segunda Entrega - Tu modelo de clientes (se habilita en la Clase 8)
 - Tercera Entrega - Tu primera página (se habilita en la Clase 11)
 - Entrega final - Playground Final Project (se habilita en la Clase final)
