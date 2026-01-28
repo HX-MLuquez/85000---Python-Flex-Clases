@@ -33,7 +33,7 @@ python -m pip --version
 - En "Variables del sistema", selecciona la variable "Path" y haz clic en "Editar".
 - Añade la ruta donde se instaló Python (por ejemplo, `C:\Python39\` y `C:\Python39\Scripts\`) y guarda los cambios.
 
-
+20:23 volvemos!
 
 
 y para Instalar pip:
