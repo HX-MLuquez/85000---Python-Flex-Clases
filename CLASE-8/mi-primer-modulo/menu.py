@@ -1,0 +1,7 @@
+from primer_modulo.modulo1 import Persona
+from primer_modulo.modulo2 import llamado_modulo2
+
+persona1 = Persona("Juancito", "Garcia")
+print(persona1)
+
+llamado_modulo2()
