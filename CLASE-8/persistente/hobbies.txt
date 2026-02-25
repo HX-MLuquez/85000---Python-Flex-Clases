@@ -1,6 +1,5 @@
-dados
-ludo
+
 chess
+math
+futbol
 tenis
-fefe
-fifi
