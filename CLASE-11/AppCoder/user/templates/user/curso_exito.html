@@ -1,0 +1,22 @@
+{# --- UNIDAD 11 - CODE --- #}
+{# Confirmación de curso agregado - Formularios en Django #}
+
+{% extends "user/base.html" %}
+
+{% block title %}Curso Agregado - AppCoder{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="card" style="max-width: 480px; margin-inline: auto; text-align: center;">
+    <div class="alert alert--success">
+      ¡El curso se ha agregado correctamente!
+    </div>
+    <p class="text-muted">Puedes agregar más cursos o buscar uno existente.</p>
+    <div class="flex flex-gap" style="justify-content: center; margin-top: 1.5rem;">
+      <a href="{% url 'cursoFormulario' %}" class="btn">Agregar otro curso</a>
+      <a href="{% url 'cursos' %}" class="btn btn--outline">Ver Cursos</a>
+      <a href="{% url 'buscarCurso' %}" class="btn btn--ghost">Buscar Curso</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

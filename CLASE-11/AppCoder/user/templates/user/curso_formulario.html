@@ -1,0 +1,25 @@
+{# --- UNIDAD 11 - CODE --- #}
+{# Formulario para agregar curso - Formularios en Django #}
+
+{% extends "user/base.html" %}
+
+{% block title %}Agregar Curso - AppCoder{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="form-page">
+    <div class="form-page__header">
+      <a href="{% url 'cursos' %}" class="form-page__back">← Volver a Cursos</a>
+      <h1>Agregar Curso</h1>
+      <p class="text-muted">Completa el formulario para registrar un nuevo curso.</p>
+    </div>
+    <div class="card">
+      <form action="{% url 'cursoFormulario' %}" method="post" class="form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
