@@ -1,0 +1,21 @@
+{# --- UNIDAD 11 - CODE --- #}
+{% extends "user/base.html" %}
+
+{% block title %}Inicio - AppCoder{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="hero">
+    <h1 class="hero__title">Bienvenido a AppCoder</h1>
+    <p class="hero__subtitle">
+      Plataforma educativa con herencia de templates, formularios y panel de administración.
+      Unidad 11 - Playground Intermedio Parte II.
+    </p>
+    <div class="hero__actions">
+      <a href="{% url 'cursos' %}" class="btn">Ver Cursos</a>
+      <a href="{% url 'cursoFormulario' %}" class="btn btn--outline">Agregar Curso</a>
+      <a href="{% url 'buscarCurso' %}" class="btn btn--ghost">Buscar Curso</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

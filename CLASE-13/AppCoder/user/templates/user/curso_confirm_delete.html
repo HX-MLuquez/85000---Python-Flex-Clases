@@ -1,0 +1,18 @@
+{% extends "user/base.html" %}
+
+{% block title %}Eliminar curso - AppCoder{% endblock %}
+
+{% block content %}
+{# -- CODE - Parte III --- #}
+<div class="container">
+  <div class="card">
+    <h1 class="card__title">Eliminar curso</h1>
+    <p class="card__body">¿Seguro que deseas borrar {{ object.nombre }}?</p>
+    <form method="post">
+      {% csrf_token %}
+      <button class="btn" type="submit">Confirmar</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+

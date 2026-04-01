@@ -1,0 +1,22 @@
+{# --- UNIDAD 11 - CODE --- #}
+{# Template Hijo - Página de Profesores - Herencia de Templates #}
+
+{% extends "user/base.html" %}
+
+{% block title %}Profesores - AppCoder{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-header__title">Página de Profesores</h1>
+  </div>
+  <div class="card">
+    <h2 class="card__title">Nuestro equipo de profesores</h2>
+    <p class="card__body">
+      Conoce a los profesionales que forman parte de AppCoder.
+      Puedes gestionar los profesores desde el panel de administración.
+    </p>
+    <a href="/admin/" class="btn btn--outline">Ir al Panel Admin</a>
+  </div>
+</div>
+{% endblock %}

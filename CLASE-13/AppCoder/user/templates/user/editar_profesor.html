@@ -1,0 +1,20 @@
+{% extends "user/base.html" %}
+
+{% block title %}Editar profesor - AppCoder{% endblock %}
+
+{% block content %}
+{# -- CODE - Parte III --- #}
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-header__title">Editar profesor</h1>
+  </div>
+  <div class="card">
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn" type="submit">Guardar cambios</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+

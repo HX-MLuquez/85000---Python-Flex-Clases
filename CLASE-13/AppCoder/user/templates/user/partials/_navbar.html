@@ -1,0 +1,20 @@
+{# --- UNIDAD 11 - CODE --- #}
+{# Menú de Navegación - Unidad 11: Navegar entre Templates #}
+
+{% load static %}
+<header class="navbar">
+  <div class="container navbar__inner">
+    <a class="navbar__brand" href="{% url 'inicio' %}">AppCoder</a>
+    <nav class="navbar__links">
+      <a href="{% url 'inicio' %}">Inicio</a>
+      <a href="{% url 'cursos' %}">Cursos</a>
+      <a href="{% url 'curso_list' %}">Cursos (CBV)</a>
+      <a href="{% url 'profesores_list' %}">Profesores</a>
+      <a href="{% url 'estudiantes' %}">Estudiantes</a>
+      <a href="{% url 'entregables' %}">Entregables</a>
+      <a href="{% url 'cursoFormulario' %}">Agregar Curso</a>
+      <a href="{% url 'buscarCurso' %}">Buscar Curso</a>
+      <a class="btn" href="/admin/">Panel Admin</a>
+    </nav>
+  </div>
+</header>

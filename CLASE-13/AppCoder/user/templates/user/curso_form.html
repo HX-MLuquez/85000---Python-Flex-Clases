@@ -1,0 +1,18 @@
+{% extends "user/base.html" %}
+
+{% block title %}Curso - AppCoder{% endblock %}
+
+{% block content %}
+{# -- CODE - Parte III --- #}
+<div class="container">
+  <div class="card">
+    <h1 class="card__title">Curso</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn" type="submit">Guardar</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+

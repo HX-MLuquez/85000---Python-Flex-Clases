@@ -1,0 +1,27 @@
+{% extends "user/base.html" %}
+
+{% block title %}Profesores - AppCoder{% endblock %}
+
+{% block content %}
+{# -- CODE - Parte III --- #}
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-header__title">Profesores</h1>
+    <a class="btn" href="{% url 'profesores_crear' %}">Nuevo profesor</a>
+  </div>
+  <div class="card">
+    <ul class="card__list">
+      {% for profesor in profesores %}
+      <li class="card__list-item">
+        {{ profesor.nombre }} {{ profesor.apellido }}
+        <a href="{% url 'profesores_editar' profesor.pk %}">Editar</a>
+        <a href="{% url 'profesores_eliminar' profesor.pk %}">Borrar</a>
+      </li>
+      {% empty %}
+      <li class="card__list-item">No hay profesores cargados.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
+

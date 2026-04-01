@@ -1,0 +1,27 @@
+{% extends "user/base.html" %}
+
+{% block title %}Cursos (CBV) - AppCoder{% endblock %}
+
+{% block content %}
+{# -- CODE - Parte III --- #}
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-header__title">Cursos (CBV)</h1>
+    <a class="btn" href="{% url 'curso_crear' %}">Nuevo curso</a>
+  </div>
+  <div class="card">
+    <ul class="card__list">
+      {% for curso in cursos %}
+      <li class="card__list-item">
+        <a href="{% url 'curso_detalle' curso.pk %}">{{ curso.nombre }}</a>
+        <a href="{% url 'curso_editar' curso.pk %}">Editar</a>
+        <a href="{% url 'curso_borrar' curso.pk %}">Borrar</a>
+      </li>
+      {% empty %}
+      <li class="card__list-item">No hay cursos disponibles.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{# --- UNIDAD 11 - CODE --- #}
+{# Formulario de búsqueda de curso - Búsqueda con Formularios #}
+
+{% extends "user/base.html" %}
+
+{% block title %}Buscar Curso - AppCoder{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="form-page">
+    <div class="form-page__header">
+      <a href="{% url 'cursos' %}" class="form-page__back">← Volver a Cursos</a>
+      <h1>Buscar Curso por Camada</h1>
+      <p class="text-muted">Ingresa el número de camada para buscar cursos.</p>
+    </div>
+    <div class="card">
+      <form method="get" action="{% url 'buscarCurso' %}" class="form">
+        {{ form.as_p }}
+        <button type="submit" class="btn">Buscar</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

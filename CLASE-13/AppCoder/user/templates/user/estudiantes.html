@@ -1,0 +1,22 @@
+{# --- UNIDAD 11 - CODE --- #}
+{# Template Hijo - Página de Estudiantes - Herencia de Templates #}
+
+{% extends "user/base.html" %}
+
+{% block title %}Estudiantes - AppCoder{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-header__title">Página de Estudiantes</h1>
+  </div>
+  <div class="card">
+    <h2 class="card__title">Comunidad de estudiantes</h2>
+    <p class="card__body">
+      Información sobre los estudiantes de AppCoder.
+      La gestión de estudiantes se realiza desde el panel de administración.
+    </p>
+    <a href="/admin/" class="btn btn--outline">Ir al Panel Admin</a>
+  </div>
+</div>
+{% endblock %}

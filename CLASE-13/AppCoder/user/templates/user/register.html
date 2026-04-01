@@ -1,0 +1,35 @@
+{% extends "user/base.html" %}
+
+{% block title %}Registro - AppCoder{% endblock %}
+
+{% block content %}
+{# -- CODE - Parte III --- #}
+<div class="container">
+  <div class="card">
+    <h1 class="card__title">Registro</h1>
+    {% comment %} <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn" type="submit">Crear cuenta</button>
+    </form> {% endcomment %}
+
+   <form method="post" class="form">
+      {% csrf_token %}
+      <div class="form__group">
+        {{ form.username.label_tag }}
+        {{ form.username }}
+      </div>
+      <div class="form__group">
+        {{ form.password1.label_tag }}
+        {{ form.password1 }}
+      </div>
+      <div class="form__group">
+        {{ form.password2.label_tag }}
+        {{ form.password2 }}
+      </div>
+      <button class="btn" type="submit">Crear cuenta</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{# --- UNIDAD 11 - CODE --- #}
+{# Template Hijo - Página de Entregables - Herencia de Templates #}
+
+{% extends "user/base.html" %}
+
+{% block title %}Entregables - AppCoder{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-header__title">Página de Entregables</h1>
+  </div>
+  <div class="card">
+    <h2 class="card__title">Entregables</h2>
+    <p class="card__body">
+      Consulta los entregables de los cursos. Los entregables se administran
+      desde el panel de administración de Django.
+    </p>
+    <a href="/admin/" class="btn btn--outline">Ir al Panel Admin</a>
+  </div>
+</div>
+{% endblock %}
